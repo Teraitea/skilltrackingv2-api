@@ -1,5 +1,6 @@
 <?php
 
+use App\Formation;
 use Illuminate\Database\Seeder;
 
 class FormationSeeder extends Seeder
@@ -11,6 +12,6 @@ class FormationSeeder extends Seeder
      */
     public function run()
     {
-        //
+        factory(Formation::class, 10)->create();
     }
 }
