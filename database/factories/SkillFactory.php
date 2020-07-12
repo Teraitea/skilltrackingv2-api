@@ -9,7 +9,7 @@ $factory->define(Skill::class, function (Faker $faker) {
     return [
         'name' => $faker->name(),
         'is_mandatory' => $faker->boolean(),
-        'module_id' => 2
+        'module_id' => $faker->randomDigit()
     ];
     
 });
